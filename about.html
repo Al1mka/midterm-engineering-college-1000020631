@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Engineering College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-gear-fill me-2"></i>
+                Engineering College
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn-register" href="registration.html">Apply Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold">Our Programs</h1>
+                        <p class="lead">Comprehensive engineering education designed for tomorrow's challenges. Choose from our ABET-accredited programs.</p>
+                        <a href="registration.html" class="btn btn-primary btn-lg">Start your application</a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <i class="bi bi-laptop hero-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Filter -->
+        <section class="program-filter py-4 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h3 class="mb-4">Filter Programs by Department</h3>
+                        <div class="btn-group flex-wrap" role="group">
+                            <button type="button" class="btn btn-outline-primary program-filter-btn active" data-filter="all">All Programs</button>
+                            <button type="button" class="btn btn-outline-primary program-filter-btn" data-filter="computing">Computing</button>
+                            <button type="button" class="btn btn-outline-primary program-filter-btn" data-filter="electrical">Electrical</button>
+                            <button type="button" class="btn btn-outline-primary program-filter-btn" data-filter="mechanical">Mechanical</button>
+                            <button type="button" class="btn btn-outline-primary program-filter-btn" data-filter="civil">Civil</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Grid -->
+        <section class="programs-grid py-5">
+            <div class="container">
+                <div class="row" id="programs-container">
+                    <!-- Computer Science -->
+                    <div class="col-lg-6 mb-4" data-category="computing">
+                        <div class="program-card h-100" id="computer-science">
+                            <div class="program-icon">
+                                <i class="bi bi-cpu"></i>
+                            </div>
+                            <h3>Computer Science & Engineering</h3>
+                            <p class="program-duration">Duration: 4 years | Credits: 120</p>
+                            <p>Comprehensive program covering software development, algorithms, artificial intelligence, and computer systems. Gain hands-on experience with cutting-edge technologies.</p>
+                            <div class="program-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>AI and Machine Learning specialization</li>
+                                    <li>Industry internships with tech partners</li>
+                                    <li>State-of-the-art computing labs</li>
+                                    <li>Cybersecurity and data science tracks</li>
+                                </ul>
+                            </div>
+                            <div class="program-actions mt-3">
+                                <a href="registration.html" class="btn btn-primary">Apply Now</a>
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#csModal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Electrical Engineering -->
+                    <div class="col-lg-6 mb-4" data-category="electrical">
+                        <div class="program-card h-100" id="electrical">
+                            <div class="program-icon">
+                                <i class="bi bi-lightning-charge"></i>
+                            </div>
+                            <h3>Electrical Engineering</h3>
+                            <p class="program-duration">Duration: 4 years | Credits: 124</p>
+                            <p>Focus on power systems, electronics, control systems, and renewable energy technologies. Develop solutions for sustainable energy and smart grid systems.</p>
+                            <div class="program-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Smart grid technology focus</li>
+                                    <li>Renewable energy systems</li>
+                                    <li>Industry partnerships</li>
+                                    <li>Advanced electronics labs</li>
+                                </ul>
+                            </div>
+                            <div class="program-actions mt-3">
+                                <a href="registration.html" class="btn btn-primary">Apply Now</a>
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#eeModal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mechanical Engineering -->
+                    <div class="col-lg-6 mb-4" data-category="mechanical">
+                        <div class="program-card h-100" id="mechanical">
+                            <div class="program-icon">
+                                <i class="bi bi-gear"></i>
+                            </div>
+                            <h3>Mechanical Engineering</h3>
+                            <p class="program-duration">Duration: 4 years | Credits: 126</p>
+                            <p>Design and analysis of mechanical systems, thermodynamics, and manufacturing processes. Learn to create innovative solutions for modern industry challenges.</p>
+                            <div class="program-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Robotics and automation</li>
+                                    <li>3D printing and advanced manufacturing</li>
+                                    <li>CAD/CAM training</li>
+                                    <li>Thermal systems design</li>
+                                </ul>
+                            </div>
+                            <div class="program-actions mt-3">
+                                <a href="registration.html" class="btn btn-primary">Apply Now</a>
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#meModal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Civil Engineering -->
+                    <div class="col-lg-6 mb-4" data-category="civil">
+                        <div class="program-card h-100" id="civil">
+                            <div class="program-icon">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h3>Civil Engineering</h3>
+                            <p class="program-duration">Duration: 4 years | Credits: 125</p>
+                            <p>Infrastructure design, construction management, and environmental engineering principles. Prepare for careers in sustainable development and urban planning.</p>
+                            <div class="program-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Sustainable design focus</li>
+                                    <li>Structural analysis software</li>
+                                    <li>Field work opportunities</li>
+                                    <li>Environmental impact assessment</li>
+                                </ul>
+                            </div>
+                            <div class="program-actions mt-3">
+                                <a href="registration.html" class="btn btn-primary">Apply Now</a>
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#ceModal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Comparison -->
+        <section class="program-comparison py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Compare Programs</h2>
+                <p class="text-center mb-4">Select 2-3 programs to compare features and requirements</p>
+                
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input compare-checkbox" type="checkbox" data-program-id="cs" id="compareCs">
+                            <label class="form-check-label" for="compareCs">Computer Science</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input compare-checkbox" type="checkbox" data-program-id="ee" id="compareEe">
+                            <label class="form-check-label" for="compareEe">Electrical Engineering</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input compare-checkbox" type="checkbox" data-program-id="me" id="compareMe">
+                            <label class="form-check-label" for="compareMe">Mechanical Engineering</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <button class="btn btn-primary compare-programs-btn" disabled>Select 2-3 programs to compare</button>
+                </div>
+                
+                <div class="program-comparison-results mt-4"></div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section py-5 bg-primary text-white text-center">
+            <div class="container">
+                <h2 class="mb-4">Ready to Choose Your Program?</h2>
+                <p class="lead mb-4">Join thousands of successful engineers who started their careers at Engineering College.</p>
+                <a href="registration.html" class="btn btn-accent btn-lg">Begin Your Application</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Program Modals -->
+    <div class="modal fade" id="csModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Computer Science & Engineering Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="program-details-grid">
+                        <div class="detail-card">
+                            <h6>Career Opportunities</h6>
+                            <p>Software Developer, Data Scientist, AI Engineer, Systems Analyst, Cybersecurity Specialist, Full-Stack Developer, DevOps Engineer, Mobile App Developer</p>
+                        </div>
+                        <div class="detail-card">
+                            <h6>Program Stats</h6>
+                            <div class="program-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">94%</div>
+                                    <div class="stat-label">Placement Rate</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">$85K</div>
+                                    <div class="stat-label">Avg. Starting Salary</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">12:1</div>
+                                    <div class="stat-label">Student-Faculty Ratio</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h6 class="mt-4">Sample Courses</h6>
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Core Courses</th>
+                                <th>Electives</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Programming Fundamentals, Discrete Mathematics</td>
+                                <td>Introduction to Web Development</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Data Structures, Computer Architecture</td>
+                                <td>Mobile App Development</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Algorithms, Database Systems</td>
+                                <td>Machine Learning, Cybersecurity</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Software Engineering, Capstone Project</td>
+                                <td>Cloud Computing, AI Applications</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h6 class="mt-4">Research Areas</h6>
+                    <div class="research-areas">
+                        <span class="research-tag">Artificial Intelligence</span>
+                        <span class="research-tag">Machine Learning</span>
+                        <span class="research-tag">Cybersecurity</span>
+                        <span class="research-tag">Data Science</span>
+                        <span class="research-tag">Computer Vision</span>
+                        <span class="research-tag">Natural Language Processing</span>
+                        <span class="research-tag">Distributed Systems</span>
+                        <span class="research-tag">Human-Computer Interaction</span>
+                    </div>
+                    
+                    <h6 class="mt-4">Faculty Highlights</h6>
+                    <ul class="faculty-list">
+                        <li>
+                            <span class="faculty-name">Dr. Sarah Johnson</span>
+                            <span class="faculty-expertise">AI & Machine Learning</span>
+                        </li>
+                        <li>
+                            <span class="faculty-name">Dr. Michael Chen</span>
+                            <span class="faculty-expertise">Cybersecurity & Networks</span>
+                        </li>
+                        <li>
+                            <span class="faculty-name">Dr. Emily Rodriguez</span>
+                            <span class="faculty-expertise">Data Science & Visualization</span>
+                        </li>
+                    </ul>
+                    
+                    <h6 class="mt-4">Lab Facilities</h6>
+                    <div class="lab-equipment">
+                        <span class="equipment-tag">High-Performance Computing Cluster</span>
+                        <span class="equipment-tag">VR/AR Development Lab</span>
+                        <span class="equipment-tag">Cybersecurity Lab</span>
+                        <span class="equipment-tag">Robotics & IoT Lab</span>
+                        <span class="equipment-tag">Data Analytics Center</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="eeModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Electrical Engineering Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="program-details-grid">
+                        <div class="detail-card">
+                            <h6>Career Opportunities</h6>
+                            <p>Power Systems Engineer, Electronics Designer, Control Systems Engineer, Renewable Energy Specialist, Telecommunications Engineer, Embedded Systems Developer</p>
+                        </div>
+                        <div class="detail-card">
+                            <h6>Program Stats</h6>
+                            <div class="program-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">92%</div>
+                                    <div class="stat-label">Placement Rate</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">$78K</div>
+                                    <div class="stat-label">Avg. Starting Salary</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">10:1</div>
+                                    <div class="stat-label">Student-Faculty Ratio</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h6 class="mt-4">Sample Courses</h6>
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Core Courses</th>
+                                <th>Electives</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Circuit Analysis, Engineering Mathematics</td>
+                                <td>Introduction to Renewable Energy</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Electronics, Electromagnetics</td>
+                                <td>Digital Systems Design</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Power Systems, Control Systems</td>
+                                <td>Smart Grid Technology, Electric Vehicles</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Power Electronics, Capstone Project</td>
+                                <td>Renewable Energy Systems, IoT Applications</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h6 class="mt-4">Research Areas</h6>
+                    <div class="research-areas">
+                        <span class="research-tag">Renewable Energy Systems</span>
+                        <span class="research-tag">Smart Grid Technology</span>
+                        <span class="research-tag">Power Electronics</span>
+                        <span class="research-tag">Control Systems</span>
+                        <span class="research-tag">Embedded Systems</span>
+                        <span class="research-tag">Electric Vehicles</span>
+                        <span class="research-tag">IoT Applications</span>
+                        <span class="research-tag">Wireless Power Transfer</span>
+                    </div>
+                    
+                    <h6 class="mt-4">Faculty Highlights</h6>
+                    <ul class="faculty-list">
+                        <li>
+                            <span class="faculty-name">Dr. Robert Williams</span>
+                            <span class="faculty-expertise">Power Systems & Smart Grids</span>
+                        </li>
+                        <li>
+                            <span class="faculty-name">Dr. Lisa Thompson</span>
+                            <span class="faculty-expertise">Renewable Energy</span>
+                        </li>
+                        <li>
+                            <span class="faculty-name">Dr. James Wilson</span>
+                            <span class="faculty-expertise">Electronics & Embedded Systems</span>
+                        </li>
+                    </ul>
+                    
+                    <h6 class="mt-4">Lab Facilities</h6>
+                    <div class="lab-equipment">
+                        <span class="equipment-tag">Smart Grid Simulation Lab</span>
+                        <span class="equipment-tag">Power Electronics Lab</span>
+                        <span class="equipment-tag">Renewable Energy Lab</span>
+                        <span class="equipment-tag">Electronics Design Center</span>
+                        <span class="equipment-tag">Control Systems Lab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="meModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mechanical Engineering Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="program-details-grid">
+                        <div class="detail-card">
+                            <h6>Career Opportunities</h6>
+                            <p>Mechanical Design Engineer, Robotics Engineer, Automotive Engineer, Manufacturing Engineer, Thermal Systems Engineer, Aerospace Engineer, Product Development Engineer</p>
+                        </div>
+                        <div class="detail-card">
+                            <h6>Program Stats</h6>
+                            <div class="program-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">91%</div>
+                                    <div class="stat-label">Placement Rate</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">$76K</div>
+                                    <div class="stat-label">Avg. Starting Salary</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">11:1</div>
+                                    <div class="stat-label">Student-Faculty Ratio</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h6 class="mt-4">Sample Courses</h6>
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Core Courses</th>
+                                <th>Electives</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Engineering Mechanics, Materials Science</td>
+                                <td>Introduction to Robotics</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Thermodynamics, Fluid Mechanics</td>
+                                <td>CAD/CAM Fundamentals</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Machine Design, Heat Transfer</td>
+                                <td>Advanced Manufacturing, Automotive Systems</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Control Systems, Capstone Project</td>
+                                <td>Robotics & Automation, Sustainable Design</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h6 class="mt-4">Research Areas</h6>
+                    <div class="research-areas">
+                        <span class="research-tag">Robotics & Automation</span>
+                        <span class="research-tag">Advanced Manufacturing</span>
+                        <span class="research-tag">Thermal Systems</span>
+                        <span class="research-tag">Biomechanics</span>
+                        <span class="research-tag">Sustainable Design</span>
+                        <span class="research-tag">Composite Materials</span>
+                        <span class="research-tag">Energy Systems</span>
+                        <span class="research-tag">Mechatronics</span>
+                    </div>
+                    
+                    <h6 class="mt-4">Faculty Highlights</h6>
+                    <ul class="faculty-list">
+                        <li>
+                            <span class="faculty-name">Dr. David Martinez</span>
+                            <span class="faculty-expertise">Robotics & Automation</span>
+                        </li>
+                        <li>
+                            <span class="faculty-name">Dr. Jennifer Lee</span>
+                            <span class="faculty-expertise">Advanced Materials</span>
+                        </li>
+                        <li>
+                            <span class="faculty-name">Dr. Kevin Brown</span>
+                            <span class="faculty-expertise">Thermal Systems & Energy</span>
+                        </li>
+                    </ul>
+                    
+                    <h6 class="mt-4">Lab Facilities</h6>
+                    <div class="lab-equipment">
+                        <span class="equipment-tag">Robotics & Automation Lab</span>
+                        <span class="equipment-tag">3D Printing Center</span>
+                        <span class="equipment-tag">Materials Testing Lab</span>
+                        <span class="equipment-tag">Thermal Systems Lab</span>
+                        <span class="equipment-tag">Fluid Mechanics Lab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ceModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Civil Engineering Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="program-details-grid">
+                        <div class="detail-card">
+                            <h6>Career Opportunities</h6>
+                            <p>Structural Engineer, Transportation Engineer, Geotechnical Engineer, Environmental Engineer, Construction Manager, Urban Planner, Water Resources Engineer, Project Manager</p>
+                        </div>
+                        <div class="detail-card">
+                            <h6>Program Stats</h6>
+                            <div class="program-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">93%</div>
+                                    <div class="stat-label">Placement Rate</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">$72K</div>
+                                    <div class="stat-label">Avg. Starting Salary</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">12:1</div>
+                                    <div class="stat-label">Student-Faculty Ratio</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h6 class="mt-4">Sample Courses</h6>
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Core Courses</th>
+                                <th>Electives</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Engineering Mechanics, Introduction to CAD</td>
+                                <td>Introduction to Sustainable Design</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Structural Analysis, Fluid Mechanics</td>
+                                <td>Geographic Information Systems</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Geotechnical Engineering, Transportation</td>
+                                <td>Environmental Engineering, Urban Planning</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Construction Management, Capstone Project</td>
+                                <td>Advanced Structural Design, Water Resources</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h6 class="mt-4">Research Areas</h6>
+                    <div class="research-areas">
+                        <span class="research-tag">Sustainable Infrastructure</span>
+                        <span class="research-tag">Structural Health Monitoring</span>
+                        <span class="research-tag">Geotechnical Engineering</span>
+                        <span class="research-tag">Water Resources Management</span>
+                        <span class="research-tag">Transportation Systems</span>
+                        <span class="research-tag">Construction Materials</span>
+                        <span class="research-tag">Environmental Engineering</span>
+                        <span class="research-tag">Urban Resilience</span>
+                    </div>
+                    
+                    <h6 class="mt-4">Faculty Highlights</h6>
+                    <ul class="faculty-list">
+                        <li>
+                            <span class="faculty-name">Dr. Patricia Garcia</span>
+                            <span class="faculty-expertise">Structural Engineering</span>
+                        </li>
+                        <li>
+                            <span class="faculty-name">Dr. Richard Davis</span>
+                            <span class="faculty-expertise">Geotechnical Engineering</span>
+                        </li>
+                        <li>
+                            <span class="faculty-name">Dr. Amanda White</span>
+                            <span class="faculty-expertise">Environmental Engineering</span>
+                        </li>
+                    </ul>
+                    
+                    <h6 class="mt-4">Lab Facilities</h6>
+                    <div class="lab-equipment">
+                        <span class="equipment-tag">Structures & Materials Lab</span>
+                        <span class="equipment-tag">Geotechnical Engineering Lab</span>
+                        <span class="equipment-tag">Environmental Engineering Lab</span>
+                        <span class="equipment-tag">Hydraulics & Water Resources Lab</span>
+                        <span class="equipment-tag">Transportation Systems Lab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Engineering College</h5>
+                    <p>123 Education Boulevard<br>Tech City, TC 12345</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="student-life.html">Campus Life</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="bi bi-envelope me-2"></i> info@engineeringcollege.edu</p>
+                    <p><i class="bi bi-phone me-2"></i> (555) 123-4567</p>
+                    <p><i class="bi bi-clock me-2"></i> Mon-Fri: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-3 border-top">
+                <p>&copy; 2024 Engineering College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/interactive.js"></script>
+</body>
+</html>

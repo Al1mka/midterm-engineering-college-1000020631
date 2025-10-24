@@ -1,0 +1,235 @@
+/* Mobile First Responsive Design */
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 575.98px) {
+    body {
+        padding-top: 66px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .program-card,
+    .news-card,
+    .life-card,
+    .info-card {
+        padding: var(--spacing-md);
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .form-container {
+        padding: var(--spacing-md);
+    }
+    
+    .process-step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin-right: 0;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .process-step:not(:last-child)::after {
+        left: 50%;
+        top: 50px;
+        bottom: -var(--spacing-xl);
+        height: 2px;
+        width: auto;
+    }
+    
+    .event-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .event-date {
+        margin-right: 0;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .hero-icon {
+        font-size: 8rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-actions {
+        flex-direction: row;
+    }
+    
+    .btn {
+        width: auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .program-card,
+    .news-card {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0 0.25rem;
+    }
+    
+    .hero-visual {
+        height: 400px;
+    }
+    
+    .hero-icon {
+        font-size: 12rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .hero-icon {
+        font-size: 15rem;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000080;
+        --accent-color: #ffff00;
+    }
+    
+    .program-card,
+    .news-card,
+    .life-card,
+    .info-card {
+        border: 2px solid var(--dark-color);
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .program-card:hover,
+    .news-card:hover,
+    .life-card:hover,
+    .info-card:hover,
+    .btn:hover {
+        transform: none;
+    }
+    
+    .hero-icon {
+        animation: none;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .nav-link:hover {
+        background-color: transparent;
+    }
+    
+    .program-card:hover,
+    .news-card:hover,
+    .life-card:hover,
+    .info-card:hover {
+        transform: none;
+        box-shadow: var(--box-shadow);
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .btn,
+    .hero-actions,
+    .social-links {
+        display: none !important;
+    }
+    
+    body {
+        padding-top: 0;
+    }
+    
+    a {
+        text-decoration: underline !important;
+        color: #000 !important;
+    }
+    
+    .program-card,
+    .news-card {
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #000 !important;
+    }
+    
+    .hero {
+        background: none !important;
+        color: #000 !important;
+    }
+    
+    .hero-title {
+        color: #000 !important;
+    }
+}
